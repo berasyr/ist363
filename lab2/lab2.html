@@ -10,13 +10,18 @@
             }
 
             .container { background-color: #d4ebf8;
-                padding: 20px;
+                padding: 1% 10%;
                 border-radius: 10px;
-                margin: 20px;
-                padding: 1
+                margin: 30px;
+                font-size: 1em;
+                padding: 10px;
             }
 
-            h1 {color:#0e3981}
+            h1 {color:#0e3981;
+                animation: slideDown 3s ease-out, flip 1s  2s, ease-out, zoom 1s 3s 1; 
+                display: inline-block;
+            }
+            
             strong {color: #e38e49}
             .images {
                 display: flex;
@@ -33,19 +38,13 @@
             }
 
             
-            .name-container {
-                color: #0e3981;
-                margin-top: 0; 
-                display: inline-block;
-                position: relative; 
-                animation: slideDown 2s, flip 1s, ease-out 1s pulse 1s; 
-            }
+            
 
             @keyframes slideDown {
-                0% {
-                    transform: translateY(200%); 
+                from {
+                    transform: translateY(-200%); 
                 }
-                100% {
+                to {
                     transform: translate(0); 
                 }
             }
@@ -59,12 +58,15 @@
                 }
             }
 
-            @keyframes pulse {
+            @keyframes zoom {
                 0% {
                     transform: scale(1); 
                 }
-                100% {
+                50% {
                     transform: scale(2); 
+                }
+                100% {
+                    transform: scale(1); 
                 }
             }
                     
@@ -76,9 +78,9 @@
     </head>
     <body>
         <main class="container">
-            <div class="name-container">
-                <h1>Bera Felouz</h1>
-            </div>
+            
+            <h1><span>Bera Felouz</span></h1>
+        
             <p>Something <strong>Personal</strong> is that I'm currently unemployed. I got laid off from my seasonal job. Something <strong>professionally</strong>, I worked at Citi Bank as a summer analyst in the Technology and Operations team. Something <strong>peculiar</strong> is I don't like peanut butter.
             </p>
             <div class="images">

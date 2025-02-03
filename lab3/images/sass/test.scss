@@ -1,0 +1,164 @@
+@import "../sass/partials.scss";
+@import "../sass/variables.scss";
+@import "../sass/reset.scss";
+
+
+
+
+$heading_color: #fff;
+$body_font: Arial, sans-serif;
+$background_color: #e89b6a;
+$pargraph_color: #e89b6a;
+$newsletter_background-color: #e4fdc3;
+$footer_background-color: #8ae2c8;
+$nav_link_color: #ffffff;
+$nav_hover_color: #8ae2c8;
+
+
+@mixin feature {
+    border: 1px;
+}
+ 
+body {
+    font-family: $body_font;
+}
+
+h1 {color: $heading_color;
+    font-size: 20px;
+    font-family: $body_font;
+    text-align: center;
+    padding: 10px;
+}
+
+h2 {color: $pargraph_color;
+}
+
+nav {
+    background-color: $background_color;
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+      
+    li {
+        display: inline;
+        margin: 10px;
+    }
+
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    color: $pargraph_color;
+    list-style: none;
+
+    a{
+        color: $nav_link_color;
+        text-decoration: none;
+        font-family: 'Arial', sans-serif;
+    }
+}
+
+.topmenu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+
+    img {
+        width: 200px;
+        height: auto;
+        border-radius: 8px;
+        display: inline;
+
+    }
+}
+
+caption {
+    margin-top: 10px;  
+    font-size: 1rem;
+    color: #e89b6a;  
+    display: inline;
+    text-align: center;
+}
+
+.newsletter {
+    background-color: $newsletter_background-color;
+    padding: 10px;
+    text-align: center;
+    color: $pargraph_color;
+    border-radius: 8px;
+
+    .newsletter img {
+        width: 100px;
+        height: auto;
+        border-radius: 8px;
+        display: inline;
+        text-align: center;
+    }
+
+}
+
+.five {
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.olderrecipes {
+    padding: 10px;
+    text-align: center;
+
+}
+
+.month {padding: 10px;
+    text-align: center;
+}
+
+.recipe5 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2px 0;
+
+    img {
+        width: 200px;
+        height: auto;
+        border-radius: 8px;
+        display: inline;
+
+    }
+}
+
+footer {background-color: $footer_background-color; 
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    color: $heading_color;
+    font-family: 'Arial', sans-serif;
+
+    li {
+        display: inline;
+        text-decoration: none;
+        margin: 10px;
+        color: $heading_color;
+        list-style: none;
+    }
+
+    a{
+        color: $nav_link_color;
+        text-decoration: none;
+        font-family: 'Arial', sans-serif;
+    }
+
+
+}
+
+
+
+
+
+  

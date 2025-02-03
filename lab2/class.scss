@@ -1,0 +1,30 @@
+$heading_color: blue;
+$main_font: Arial, Halevtica, sans-serif;
+h1 {
+    color: $heading_color; 
+}
+ @mixin warning {
+    color: orange;
+    background-color: green;}
+
+.danger{
+    @include warning;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+
+.jumbotron{
+    width: 100%;
+    background-color: lightblue;
+    border: 2px solid black
+}
+
+.bigheading_about {
+    font-size: 2em;
+    font-family: $main_font;
+    color: $heading_color;
+}
+
+ 
+
+
+
+ 

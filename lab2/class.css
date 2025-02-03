@@ -1,0 +1,21 @@
+h1 {
+  color: blue;
+}
+
+.danger {
+  color: orange;
+  background-color: green;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.jumbotron {
+  width: 100%;
+  background-color: lightblue;
+  border: 2px solid black;
+}
+
+.bigheading_about {
+  font-size: 2em;
+  font-family: Arial, Halevtica, sans-serif;
+  color: blue;
+}/*# sourceMappingURL=class.css.map */
