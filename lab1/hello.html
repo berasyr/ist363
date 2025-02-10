@@ -1,14 +1,64 @@
 <!DOCTYPE html>
-
-<html land="em">
+<html lang="en">
     <head>
-        <meta charset="utf-8">
-        <title>Hello, world</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Orange News</title>
+        <script src="https://cdn.tailwindcss.com"></script>
     </head>
+    <body class="bg-gray-100">
 
-    <body>
-        <h1>Bera Felouz - IST 363</h1>
-        <p>Hello, World</p>
-    </body>
-</html>
-
+        <div class="container mx-auto p-6">
+            <!-- Flexbox container for Top Headlines and Game Scores -->
+            <div class="flex space-x-8 p-6 rounded-lg shadow-md">
+              
+              <!-- Top Headlines Section with each headline in its own flexbox -->
+              <div class="w-1/2 p-4 rounded-lg"></div>
+            <h2 class="text-2xl font-bold mb-4">Top Headlines</h2>
+            <div class="mb-6 flex flex-col space-y-4">
+              <!-- First headline -->
+              <div class="flex flex-col bg-gray-100 p-3 rounded-lg">
+                <h3 class="text-xl font-semibold">Player X Breaks Record</h3>
+                <p class="text-gray-600">The record-breaking performance from Player X stunned fans everywhere...</p>
+              </div>
+              <!-- Second headline -->
+              <div class="flex flex-col bg-gray-100 p-3 rounded-lg"></div>
+                <h3 class="text-xl font-semibold">Team Y Wins Championship</h3>
+                <p class="text-gray-600">In an epic showdown, Team Y came out on top with a historic victory...</p>
+              </div>
+              <!-- Third headline -->
+              <div class="flex flex-col bg-gray-100 p-3 rounded-lg"></div>
+                <h3 class="text-xl font-semibold">Athlete Z Announces Retirement</h3>
+                <p class="text-gray-600">Athlete Z's retirement shocked the sports world...</p>
+              </div>
+            </div>
+              </div>
+              
+              <!-- Game Scores Section -->
+              <div class="w-1/2 p-4 rounded-lg"></div>
+            <h2 class="text-2xl font-bold mb-4">Game Scores</h2>
+            <div class="mb-6 flex flex-col space-y-4">
+              <!-- First game score -->
+              <div class="flex flex-col bg-gray-100 p-3 rounded-lg">
+                <h3 class="text-xl font-semibold">Game 1: Team A vs Team B</h3>
+                <p class="text-gray-600">Team A: 100, Team B: 98</p>
+              </div>
+              <!-- Second game score -->
+              <div class="flex flex-col bg-gray-100 p-3 rounded-lg">
+                <h3 class="text-xl font-semibold">Game 2: Team C vs Team D</h3>
+                <p class="text-gray-600">Team C: 85, Team D: 90</p>
+              </div>
+              <!-- Third game score -->
+              <div class="flex flex-col bg-gray-100 p-3 rounded-lg">
+                <h3 class="text-xl font-semibold">Game 3: Team E vs Team F</h3>
+                <p class="text-gray-600">Team E: 78, Team F: 82</p>
+              </div>
+            </div>
+              </div>
+            </div>
+        </div>
+          
+          
+        
+      
+      
