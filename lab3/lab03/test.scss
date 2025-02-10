@@ -9,28 +9,36 @@ $heading_color: #fff;
 $body_font: Arial, sans-serif;
 $background_color: #e89b6a;
 $pargraph_color: #e89b6a;
-$newsletter_background-color: #e4fdc3;
-$footer_background-color: #8ae2c8;
+$newsletter_background_color: #e4fdc3;
+$footer_background_color: #8ae2c8;
 $nav_link_color: #ffffff;
 $nav_hover_color: #8ae2c8;
 
 
 @mixin feature {
-    border: 1px;
+    border: 1px solid #000;
+    padding: 10px;
 }
  
 body {
     font-family: $body_font;
 }
-
-h1 {color: $heading_color;
+h1 {
+    color: $heading_color;
+    @extend %text-center;
     font-size: 20px;
     font-family: $body_font;
     text-align: center;
-    padding: 10px;
 }
 
-h2 {color: $pargraph_color;
+h2 {
+    color: $pargraph_color;
+    @extend %text-center;
+}
+
+nav {
+    background-color: $background_color;
+    @include feature;
 }
 
 nav {
@@ -46,16 +54,21 @@ nav {
         margin: 10px;
     }
 
-    text-align: center;
-    text-decoration: none;
-    padding: 10px;
-    color: $pargraph_color;
-    list-style: none;
+    a {
+        transition: color 0.3s ease;
+        &:hover {
+        text-decoration: none;
+        padding: 10px;
+        color: $pargraph_color;
+        list-style: none;
+    }
 
-    a{
+    a {
         color: $nav_link_color;
         text-decoration: none;
         font-family: 'Arial', sans-serif;
+    }
+
     }
 }
 
@@ -78,9 +91,9 @@ caption {
     margin-top: 10px;  
     font-size: 1rem;
     color: #e89b6a;  
-    display: inline;
-    text-align: center;
-}
+    display: inline;}
+.newsletter {
+    background-color: $newsletter_background_color;}
 
 .newsletter {
     background-color: $newsletter_background-color;
@@ -121,15 +134,16 @@ caption {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 2px 0;
+    padding: 2px 0;}
 
     img {
         width: 200px;
         height: auto;
         border-radius: 8px;
-        display: inline;
+        display: inline;}
 
-    }
+footer {
+    background-color: $footer_background_color;
 }
 
 footer {background-color: $footer_background-color; 
@@ -160,5 +174,3 @@ footer {background-color: $footer_background-color;
 
 
 
-
-  
