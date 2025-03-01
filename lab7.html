@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>javascirpt - Grades</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="example.js"></script>
+</head>
+
+
+<body>
+    <script>
+        let favNumber = 4; // #1
+        console.log(" My favorite number is " + favNumber);
+
+        let favoriteFoods = ["smash burger", "pizza", "chicken wings", "steak"] // #2
+        console.log(favoriteFoods[1]);
+        let newFood = "sushi";
+        favoriteFoods.push(newFood);
+        console.log(favoriteFoods);
+
+        let foodOrder = ["Favorite Food 1: ", "Favorite Food 2: ", "Favorite Food 3: ", "Favorite Food 4: ", "Favorite Food 5: "]// #3
+        for (let i = 0; i < favoriteFoods.length; i++) {
+            console.log(foodOrder[i] + favoriteFoods[i]);
+        }
+
+        for (let i = 0; i < favoriteFoods.length; i++) {
+            if (i === 1) {
+                continue;}
+            console.log(favoriteFoods[i]);
+        }
+
+        let book = { // #4
+            title: "the 18",
+            author: "Bera Felouz",
+            yearPublished: 2022,
+            isAvailable: true
+        } 
+
+        console.log(book.title, book.author);
+
+        let isAvailable = "this18"; // #5
+        if (isAvailable === "this18") {
+            console.log("this book is available");} 
+            else {isAvailable = "19";
+            console.log("this book is not available");
+            
+        }
+
+
+        let b = 0; // #6
+        while (b <= 20) {
+            if (b % 2 === 0) {
+                console.log(b);}
+        }
+        
+        function rollDice() {
+            return Math.floor(Math.random(1) * 6) + 1;
+        }
+
+        const result = rollDice(); // #7
+        console.log(result);
+        
+
+
+
+    
+
+
+        
+
+
+
+    </script>
+
+
+</body>
+    
