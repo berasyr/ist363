@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>javascirpt - Grades</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <h1><b>Dog Age to Dog Years</b></h1>
+    
+    <form id="dogForm">
+        <label for="dogAge">Enter your dog's age in years:</label>
+        <input type="number" name="dogAgeInput" required />
+        <button type="submit">Submit</button>
+    </form>
+    <p id="result"></p>
+
+    <script>
+        function dogYears(humanYears) {
+            return humanYears * 7;
+        }
+
+        let dogForm = document.getElementById("dogForm");
+        dogForm.addEventListener("submit", function(event) {
+        
+            event.preventDefault();
+            let userInput = document.forms[0].elements["dogAgeInput"].value;
+            let dogAgeResult = dogYears(userInput);
+
+            document.getElementById("result").innerText = 
+                "Your dog is " + dogAgeResult + " dog years old!";
+        });
+    </script>
+
+    
+        
+</body>

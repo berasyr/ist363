@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>javascirpt - Grades</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="example.js"></script>
+</head>
+
+
+<body>
+    <!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Dog Age to Dog Years Calculator</title>
+</head>
+<body>
+
+
+    <p id="pone" class="oddd"></p>
+    <p class="even">two</p>
+    <P class= "odd">three</P> 
+
+    <form id="myForm">
+        <input type="text" name="fname" value="Bera">
+        <input type="text" name="lname" value="Felouz">
+        <input type="submit" value="Submit">
+    </form>
+    
+
+  <script>
+    function dogYears(f) {
+        return f * 7;
+    }  
+
+    let f = dogYears(5);
+    console.log(f)
+
+    function dogYears1(years) {
+        
+
+    }
+    dogYears1(10);
+    console.log(dogYears1(10));
+
+    let peopleAge = dogYears(10);
+    console.log(peopleAge);
+
+    // picking something by id and console.log it
+
+    let picked = document.getElementById("pone");
+    console.log(picked);
+
+    // picking something by class and console.log it and loop it
+    console.log('Below is the log by tag name');
+    let pTags = document.getElementsByTagName("p")
+    for (let i = 0; i < pTags.length; i++) {
+        console.log(pTags[i]);
+    }
+
+    // getting element value from a form
+    console.log(document.getElementById("myForm").elements[0].value);
+
+    //changing text and html tags
+    document.getElementById("pone").innerHTML = "Hello World!";
+
+    // change form value
+    document.getElementById("myForm").elements[0].value = "Ronaldo";
+
+
+  </script>
+
+</body>
+</html>
+
+</body>
