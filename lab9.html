@@ -88,23 +88,26 @@
             if (girlShield <= 0 && monsterShield <= 0) {
                 document.getElementById("result").innerText = "Both lost. Hit the Gym";
                 throwFireball.disabled = true;
+                endGameWithExplosion("Both lost. Hit the Gym", ["monster","girl"]);
                 
             } else if (girlShield <= 0) {
                 document.getElementById("result").innerText = "Monster wins";
                 throwFireball.disabled = true;
+                endGameWithExplosion("Monster wins", ["girl"]);
                 
             } else if (monsterShield <= 0) {
                 document.getElementById("result").innerText = "Girl wins";
                 throwFireball.disabled = true;
+                endGameWithExplosion("Girl wins", ["monster"]);
                 
 
             }
         }
 
-        function endGameWithExplosion(winner, whoLost) {
+        function endGameWithExplosion(winner, lost) {
             document.getElementById("result").innerText = winner;
-            Lost.forEach((loser) => {
-                document.getElementById(loser).src = "images/boom.png"; 
+            lost.forEach((lostPlayer) => {
+                document.getElementById(lostPlayer).src = "images/boom.png"; 
             });
         }
 
