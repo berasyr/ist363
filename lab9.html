@@ -32,12 +32,12 @@
     <div class="container">
         <h1 class="medievalsharp-regular">Fireball Duel</h1>
         <div id="gameboard">
-            <div class="chars"><img src="images/monster.jpg" alt="monster" id="monster"></div>
+            <div class="chars"><img src="../ist363/Images/monster.jpg" alt="monster" id="monster"></div>
             <div class="fireball">
-                <img src="images/fireball.gif" alt="fireball" id="fireballleft">
-                <img src="images/fireball.gif" alt="fireball" id="fireballright">
+                <img src="../ist363/Images/fireball.gif" alt="fireball" id="fireballleft">
+                <img src="../ist363/Images/fireball.gif" alt="fireball" id="fireballright">
             </div>
-            <div class="chars"><img src="images/girl.jpg" alt="girl" id="girl"></div>
+            <div class="chars"><img src="../ist363/Images/girl.jpg" alt="girl" id="girl"></div>
         </div>
         <div id="scoreboard">
             <div>Monster Shield: <span id="mscore">100</span>%</div>
@@ -88,15 +88,15 @@
             if (girlShield <= 0 && monsterShield <= 0) {
                 document.getElementById("result").innerText = "Both lost. Hit the Gym";
                 throwFireball.disabled = true;
-                endGameWithExplosion("both lost", ["monster"]);
+                
             } else if (girlShield <= 0) {
                 document.getElementById("result").innerText = "Monster wins";
                 throwFireball.disabled = true;
-                endGameWithExplosion("Girl lost", ["monster"]);
+                
             } else if (monsterShield <= 0) {
                 document.getElementById("result").innerText = "Girl wins";
                 throwFireball.disabled = true;
-                endGameWithExplosion("monster lost");
+                
 
             }
         }
