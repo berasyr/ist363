@@ -60,15 +60,15 @@
 
         function animateFireball() {
 
-            // Remove the class to reset animation
+            
             document.getElementById("fireballleft").classList.remove("animate");
             document.getElementById("fireballright").classList.remove("animate");
 
-            // Use a small timeout to allow the browser to register the removal
+            
             setTimeout(() => {
                 document.getElementById("fireballleft").classList.add("animate");
                 document.getElementById("fireballright").classList.add("animate");
-            }, 10);  // Small delay ensures re-triggering
+            }, 10);  
         }
 
         function playGame() {
