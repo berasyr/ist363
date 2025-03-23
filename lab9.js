@@ -25,9 +25,9 @@ function getWeather() {
             let cloudCover = data.current.cloud_cover;  
 
             
-            document.getElementById("temperatureNow").textContent = temp.toFixed(1);
-            document.getElementById("precipitationNow").textContent = preci.toFixed(1);
-            document.getElementById("cloudCoverNow").textContent = cloudCover.toFixed(0);
+            document.getElementById("temperatureNow").textContent = temp
+            document.getElementById("precipitationNow").textContent = preci
+            document.getElementById("cloudCoverNow").textContent = cloudCover
 
             
             if (cloudCoverNow >= 50) {
